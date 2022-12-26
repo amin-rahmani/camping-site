@@ -1,0 +1,32 @@
+@media (min-width:576px){
+    
+}
+
+@media (min-width:768px){
+   .nav__btn{
+    display: none;
+   }
+   .menu{
+    display: flex;
+   }
+}
+
+@media (min-width:992px){
+    .nav__links{
+        display: block;
+    }
+    .header-content__title{
+        font-size: 4.5rem;
+    }
+    .header-content__text{
+        font-size: 1.5rem;
+    }
+}
+    
+
+@media (min-width:1200px){
+    
+}
+@media (min-width:1400px){
+   
+}
