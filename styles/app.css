@@ -167,11 +167,40 @@ App Style
 .mobile-menu {
   margin-bottom: 3rem;
 }
+.nav-menu__title{
+  font-family: "Archivo Black" , sans-serif;
+  font-size: 2rem;
+  color: var(--white);
+  text-align: center;
+  border-bottom: 0.1rem solid var(--white);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
 .mobile-menu__item {
   margin-bottom: 1rem;
 }
 .mobile-menu__link {
   color: var(--white);
+  position: relative;
+}
+.mobile-menu__link::before{
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 0;
+  height: 0.3rem;
+  background-color: var(--orange);
+  border-radius: 10rem;
+}
+.mobile-menu__link:hover{
+  padding-left: 2.5rem;
+  transition: all 100ms ease-in-out;
+}
+.mobile-menu__link:hover::before{
+  width: 1.6rem;
 }
 /* 
 ==========================
@@ -184,10 +213,15 @@ App Style
 .nav-menu__link {
   color: var(--white);
   border: 0.1rem solid var(--white);
-  display: block;
   padding: 1rem;
   flex-grow: 1;
   text-align: center;
+}
+
+.nav-menu__link:hover{
+  color: var(--dark);
+  background-color: var(--white);
+  transition: all 150ms ease-in-out;
 }
 
 /* .nav-menu__link--border {
