@@ -154,7 +154,7 @@ App Style
 ===============================
 */
 .nav-menu {
-  background-color: #343434;
+  background-color: var(--dark);
   position: fixed;
   top: 0;
   left: -25rem;
@@ -334,7 +334,7 @@ App Style
 }
 /* 
 ======================
-    Main section top
+    Main section Services
 ======================
 */
 .services {
@@ -349,7 +349,7 @@ App Style
 }
 .service {
   flex-grow: 1;
-  width: 26rem;
+  width: 30rem;
   height: 23rem;
   background-color: var(--white);
   border-radius: 2rem;
@@ -367,4 +367,115 @@ App Style
 }
 .service__text {
   font-size: 1.5rem;
+}
+/* 
+======================
+    Main section Destinations
+======================
+*/
+
+.destinations {
+  text-align: center;
+  padding: 6rem 0;
+}
+.destinations__logo {
+}
+.destinations__title {
+  font-family: var(--secondary-font);
+  font-size: 2.5rem;
+  max-width: 36rem;
+  margin: 3rem auto;
+}
+.places {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1rem;
+  margin-left: -1rem;
+}
+.place {
+  background-color: var(--white);
+  border-radius: 2rem;
+  padding: 3rem;
+  color: var(--dark);
+  margin-bottom: 2rem;
+  width: 30rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  flex-grow: 1;
+}
+.place__banner {
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  height: 18rem;
+}
+.place__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.place__like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  background-color: var(--white);
+}
+.place__icon {
+}
+.place__icon-fill{
+  fill:var(--orange);
+  stroke:var(white)
+
+}
+.place__price {
+  font-family: var(--primary-font-md);
+  background-color: var(--white);
+  position: absolute;
+  bottom: -0.8rem;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 12rem;
+  padding: 0.5rem 2rem;
+  border-radius: 1.2rem;
+  color: var(--orange);
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  -ms-border-radius: 1.2rem;
+  -o-border-radius: 1.2rem;
+}
+.place__title {
+  font-family: var(--secondary-font);
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+.place__caption {
+  padding-bottom: 3rem;
+}
+.place__button {
+  background-color: rgba(141, 141, 141, 10%);
+  color: #8d8d8d;
+  transition: all 150ms ease-in;
+}
+.place__button:hover {
+  background-color: var(--dark);
+  color: var(--white);
+}
+.destinations__link {
+  background-color: transparent;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  transition: all 150ms ease-in;
+  margin-top: 3rem;
+}
+.destinations__link:hover {
+  background-color: var(--orange);
+  color: var(--pink);
 }
