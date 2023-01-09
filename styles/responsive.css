@@ -1,32 +1,103 @@
-@media (min-width:576px){
-    
+@media (max-width: 380px) {
+    .header-content__title {
+        font-size: 4rem;
+    }
+    .destinations__title{
+        font-size: 2.4rem;
+    }
+    .newsletter__title{
+        max-width: 16rem;
+    }
+    .footer{
+        text-align: center;
+    }
+    .footer-list{
+        margin-left: 0;
+        width: 100%;
+    }
+
+   
 }
 
-@media (min-width:768px){
-   .nav__btn,.nav-menu{
-    display: none;
-   }
-   .menu{
-    display: flex;
-   }
+@media (min-width: 576px) {
+
 }
 
-@media (min-width:992px){
-    .nav__links{
+@media (min-width: 768px) {
+    .nav__btn, .nav-menu {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+    .newsletter{
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+    }
+    .newsletter__content{
+        flex-basis: 60%;
+        padding-right: 2rem;
+    }
+    .newsletter__banner{
+        flex-basis: 40%;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav__links {
         display: block;
     }
-    .header-content__title{
-        font-size: 4.5rem;
+    .header-content__caption {
+        max-width: 50rem;
     }
-    .header-content__text{
-        font-size: 1.5rem;
+    .newsletter__content{
+        padding-right: 4rem;
+    }
+    .newsletter__title{
+        margin-bottom: 0;
+    }
+    .footer-app{
+        display: block;
+    }
+    .footer-app--mobile{
+        display: none;
+    }
+    .footer__wrapper{
+        display: flex;
+    }
+    .footer__left{
+        max-width: 50rem;
+    }
+    .footer__scroll{
+        left: auto;
+    }
+    .footer__wrapper{
+        justify-content: space-between;
     }
 }
-    
 
-@media (min-width:1200px){
-    
+@media (min-width: 1200px) {
+    .header{
+        min-height: 80rem;
+    }
+    .newsletter{
+        justify-content: space-between;
+    }
+    .newsletter__content{
+        flex-basis: auto;
+        width: 60rem;
+    }
+    .newsletter__banner{
+        flex-basis: auto;
+        width: 42rem;
+    }
 }
-@media (min-width:1400px){
-   
+
+@media (min-width: 1400px) {
+    .newsletter{
+        padding: 3rem 6rem;
+    }
+    
 }
