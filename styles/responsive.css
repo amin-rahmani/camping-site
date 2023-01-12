@@ -11,12 +11,13 @@
     .footer{
         text-align: center;
     }
+    .footer__right{
+        justify-content: center;
+    }
     .footer-list{
         margin-left: 0;
         width: 100%;
     }
-
-   
 }
 
 @media (min-width: 576px) {
@@ -43,6 +44,14 @@
     .newsletter__banner{
         flex-basis: 40%;
     }
+    .newsletter::before{
+        width: auto;
+        height: auto;
+        top: -5rem;
+        left: -40rem;
+        background-size: auto;
+        background-position: center left;
+    }
 }
 
 @media (min-width: 992px) {
@@ -58,6 +67,7 @@
     .newsletter__title{
         margin-bottom: 0;
     }
+
     .footer-app{
         display: block;
     }
@@ -73,8 +83,9 @@
     .footer__scroll{
         left: auto;
     }
-    .footer__wrapper{
-        justify-content: space-between;
+    .newsletter::before{
+        top: -10rem;
+        left: -30rem;
     }
 }
 
@@ -93,11 +104,21 @@
         flex-basis: auto;
         width: 42rem;
     }
+    .footer__wrapper{
+        justify-content: space-between;
+    }
+    .footer-list{
+        margin-bottom: 0;
+        margin-left: 2rem;
+    }
+    .newsletter::before{
+        top: -15rem;
+        left: -15rem;
+    }
 }
 
 @media (min-width: 1400px) {
     .newsletter{
         padding: 3rem 6rem;
     }
-    
 }

@@ -21,17 +21,17 @@
 
 @media (min-width: 992px) {
     .container {
-        width: 90rem;
+        width: 96rem;
     }
 }
 
 @media (min-width: 1200px) {
     .container {
-        width: 112rem;
+        width: 114rem;
     }
 }
 @media (min-width: 1400px) {
     .container {
-        width: 130rem;
+        width: 137rem;
     }
 }
